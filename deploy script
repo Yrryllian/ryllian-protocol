@@ -1,0 +1,19 @@
+// scripts/deploy.js
+async function main() {
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contracts with:", deployer.address);
+
+  const Offering = await ethers.getContractFactory("RyllianOffering");
+  const offering = await Offering.deploy(
+    "TOKEN_ADDRESS_HERE",   // Replace with actual token address
+    "0x000000000000000000000000000000000000dEaD"
+  );
+
+  await offering.deployed();
+  console.log("OfferingWithoutWitness deployed to:", offering.address);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
