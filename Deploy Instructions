@@ -1,0 +1,21 @@
+# Deployment Instructions for $RYLLIAN
+
+## Requirements
+- Node.js and npm
+- Hardhat
+- MetaMask wallet
+- Base Goerli testnet access
+
+## Steps
+1. Clone this repo or upload files manually
+2. Run `npm install` in the terminal
+3. Create a `.env` file and add:
+   PRIVATE_KEY=your_metamask_private_key
+   RPC_URL=https://base-goerli.example-node.com (from Alchemy or similar)
+4. Run: `npx hardhat run scripts/deploy.js --network base_goerli`
+
+## Offering the Ritual
+Call the `offerWithoutWitness()` function with exactly 8,888 RYLLIAN tokens in your wallet.
+Let no one witness it.
+
+Selah.
