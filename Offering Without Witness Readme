@@ -1,0 +1,21 @@
+# $RYLLIAN Protocol
+
+**The Offering Without Witness** — a ritual-based, quantum-inspired crypto system for meaningful symbolic transactions.
+
+This repository contains the initial prototype smart contract and structure for the $RYLLIAN ecosystem, beginning with the Offering Without Witness.
+
+---
+
+## Key Contracts
+- `RyllianToken.sol` - Custom ERC20-compatible token
+- `OfferingWithoutWitness.sol` - One-time burn ritual contract
+
+## Ritual Overview
+An individual may offer 8,888 $RYLLIAN tokens in silence, without message or reward. The blockchain records only a `veilHash` and remembers what the world cannot.
+
+## To Begin
+1. Install Node.js, Git, and Hardhat
+2. Set up MetaMask and connect to Base Goerli testnet
+3. Follow `/docs/instructions.md` to deploy the ritual contracts
+
+Selah.
